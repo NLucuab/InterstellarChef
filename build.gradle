@@ -24,7 +24,7 @@ repositories {
 }
 
 dependencies {
-
+    implementation group: 'com.google.code.gson', name: 'gson', version: '2.10.1'
     implementation fileTree(dir: 'libs', include: '*.jar')
 
     testImplementation "org.junit.jupiter:junit-jupiter:${project.junit5Version}"
