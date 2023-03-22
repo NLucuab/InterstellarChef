@@ -8,13 +8,13 @@ public class Character {
   private String description;
   private HashMap<String,String> actionResponse; //action, text printed in response to action
   private List<Item> items;
+  private List<String> dialog;
 
-  public Character(String name, String description,
-      HashMap<String, String> actionResponse, List<Item> items) {
-    this.name = name;
-    this.description = description;
-    this.actionResponse = actionResponse;
-    this.items = items;
+
+  public void talk(){
+    String result = "";
+    System.out.println(getActionResponse().get("talk"));
+    System.out.println(String.format(dialog.get(0), name));
   }
 
   public String getName() {

@@ -1,0 +1,998 @@
+[
+  {
+    "name": "Living Quarters",
+    "description": "There are people sleeping here, and you can hear snoring",
+    "exits": {
+      "east": "Sector 2"
+    },
+    "items": [
+      {
+        "name": "Uniform",
+        "description": "A uniform given to members of the galley staff",
+        "actionResponse": {
+          "look": "A uniform given to members of the galley staff",
+          "get": "You put the uniform in your inventory.",
+          "equip": "You put on the uniform. Very fancy!",
+          "drop": "You drop the uniform on the ground."
+        }
+      }
+    ],
+    "characters": [],
+    "monster": null
+  },
+  {
+    "name": "Inventory",
+    "description": "You open your inventory and look inside. You have:",
+    "exits": {
+    },
+    "items": [],
+    "characters": [],
+    "monster": null
+  },
+  {
+    "name": "South Sky Bridge",
+    "description": "As you walk into the Sky Bridge, the airlock shuts behind you. \nYou see spacesuits prepared for use",
+    "exits": {
+      "north": "Sector 1",
+      "south": "Floating Garden"
+    },
+    "items": [
+      {
+        "name": "Spacesuit",
+        "description": "You must equip this before going to the floating garden or discovery pod.",
+        "actionResponse": {
+          "look": "You must equip this before going to the floating garden or discovery pod.",
+          "get": "You put the spacesuit in your inventory.",
+          "equip": "You put the spacesuit on.",
+          "drop": "You take off the spacesuit and leave it on the ground."
+        }
+      }
+    ],
+    "characters": [],
+    "monster": null
+  },
+  {
+    "name": "Sector 1",
+    "description": "There are people passing by, with the gym to the west, pressurized gardens to the east, \nsector 2 to the north, and south sky bridge to the south.",
+    "exits": {
+      "north": "Sector 2",
+      "south": "South Sky Bridge",
+      "east": "Pressurized Gardens",
+      "west": "Gym"
+    },
+    "items": [],
+    "characters": [],
+    "monster": null
+  },
+  {
+    "name": "Pressurized Garden",
+    "description": "The space is filled with edible and medicinal plants. \nYou see a gardener watering some vegetables.",
+    "exits": {
+      "west": "Sector 1"
+    },
+    "items": [],
+    "characters": [
+      {
+        "name": "Gardener",
+        "description": "They seem friendly, but they have a lot of dirt on their hands.",
+        "actionResponse": {
+          "look": "They seem friendly, but they have a lot of dirt on their hands.",
+          "talk": "You talk to the Gardener"
+        },
+        "items": [
+          {
+            "name": "Milk",
+            "description": "This Milk must be plant-based.",
+            "actionResponse": {
+              "look": "This Milk must be plant-based.",
+              "get": "You put the Milk in your inventory for later. Hope it doesn't spill...",
+              "use": "",
+              "drop": "You drop the Milk on the ground. It splatters a little."
+            }
+          }
+        ],
+        "dialog": ["%s: Hello, Spacewalker"]
+      }
+    ],
+    "monster": null
+  },
+  {
+    "name": "Gym",
+    "description": "A fitness fanatic is doing pull-ups nearby. \nThe weight racks look secure, but you never feel certain…",
+    "exits": {
+      "east": "Sector 1"
+    },
+    "items": [],
+    "characters": [
+      {
+        "name": "Fitness Fanatic",
+        "description": "They're really buff!",
+        "actionResponse": {
+          "look": "They're really buff!",
+          "talk": "You greet the Fitness Fanatic"
+        },
+        "items": [
+          {
+            "name": "Butter",
+            "description": "This is a good source of calories.",
+            "actionResponse": {
+              "look": "This is a good source of calories.",
+              "get": "You put the Butter in your inventory for later. What if it melts?",
+              "use": "",
+              "drop": "You drop the Butter on the ground. It's now out of your inventory."
+            }
+          }
+        ],
+        "dialog": ["%s: Hello, Spacewalker"]
+      }
+    ],
+    "monster": null
+  },
+  {
+    "name": "Sector 2",
+    "description": "There are people passing by, with the Living quarters to the west, \nbathrooms to the east, sector 1 to the south, and mess hall to the north.",
+    "exits": {
+      "north": "Mess Hall",
+      "south": "Sector 1",
+      "east": "Bathrooms",
+      "west": "Living Quarters"
+    },
+    "items": [],
+    "characters": [],
+    "monster": null
+  },
+  {
+    "name": "Bathrooms",
+    "description": "Looks like a normal bathroom.",
+    "exits": {},
+    "items": [],
+    "characters": [],
+    "monster": null
+  },
+  {
+    "name": "Mess Hall",
+    "description": "There are people eating, with the kitchen to the east, \nsector 3 to the north, sector 2 to the south, and nothing to the west.",
+    "exits": {
+      "north": "Sector 3",
+      "south": "Sector 2",
+      "east": "Kitchen"
+    },
+    "items": [],
+    "characters": [
+      {
+        "name": "Cadet",
+        "description": "They seem young to be wearing a military uniform.",
+        "actionResponse": {
+          "look": "They seem young to be wearing a military uniform.",
+          "talk": "You talk to the Cadet"
+        },
+        "items": [
+          {
+            "name": "Tortillas",
+            "description": "These look nice and fresh.",
+            "actionResponse": {
+              "look": "These look nice and fresh.",
+              "get": "You put the Tortillas in your inventory for later.",
+              "use": "",
+              "drop": "You drop the Tortillas on the ground."
+            }
+          }
+        ],
+        "dialog": ["%s: Hello, Spacewalker"]
+      }
+    ],
+    "monster": null
+  },
+  {
+    "name": "Kitchen",
+    "description": "The Head Chef is calling out orders to other Kitchen staff, \nand has a recipe for you to gather ingredients and cook for Mess Hall diners tonight. \nThe Mess Hall is to the west, and nothing else surrounds the Kitchen.",
+    "exits": {
+      "west": "Mess Hall"
+    },
+    "items": [
+      {
+        "name": "Snacks",
+        "description": "These look tasty.",
+        "actionResponse": {
+          "look": "These look tasty.",
+          "get": "You put the snacks in your inventory for later.",
+          "use": "",
+          "drop": "You drop the snacks on the ground."
+        }
+      }
+    ],
+    "characters": [
+      {
+        "name": "Head Chef",
+        "description": "The Head Chef is wearing a white chef uniform and a big floppy hat.",
+        "actionResponse": {
+          "look": "The Head Chef is wearing a white chef uniform and a big floppy hat.",
+          "talk": "You talk to the Head Chef"
+        },
+        "items": [
+          {
+            "name": "Space Spaghetti Recipe",
+            "description": "You better gather these ingredients for the Chef! \nYou need: Noodles, Martian Meatballs, Tomato Sauce",
+            "actionResponse": {
+              "look": "You better gather these ingredients for the Chef! \nYou need: Noodles, Martian Meatballs, Tomato Sauce",
+              "get": "You put the recipe into your inventory",
+              "use": ""
+            }
+          },
+          {
+            "name": "Lunar Lamb Recipe",
+            "description": "You better gather these ingredients for the Chef! \nYou need: Butter, Pepper, Lunar Lamb Chops",
+            "actionResponse": {
+              "look": "You better gather these ingredients for the Chef! \nYou need: Butter, Pepper, Lunar Lamb Chops",
+              "get": "You put the recipe into your inventory",
+              "use": ""
+            }
+          },
+          {
+            "name": "Cosmic Curry Recipe",
+            "description": "You better gather these ingredients for the Chef! \nYou need: Rice, Tofu, Cosmic Curry Powder",
+            "actionResponse": {
+              "look": "You better gather these ingredients for the Chef! \nYou need: Rice, Tofu, Cosmic Curry Powder",
+              "get": "You put the recipe into your inventory",
+              "use": ""
+            }
+          },
+          {
+            "name": "Terrestrial Fish Tacos Recipe",
+            "description": "You better gather these ingredients for the Chef! \nYou need: Tortillas, Terrestrial Space Fish, Salsa",
+            "actionResponse": {
+              "look": "You better gather these ingredients for the Chef! \nYou need: Tortillas, Terrestrial Space Fish, Salsa",
+              "get": "You put the recipe into your inventory",
+              "use": ""
+            }
+          },
+          {
+            "name": "Planetary Pancakes Recipe",
+            "description": "You better gather these ingredients for the Chef! \nYou need: Flying Saucer Flour, Milk, Baking Powder",
+            "actionResponse": {
+              "look": "You better gather these ingredients for the Chef! \nYou need: Flying Saucer Flour, Milk, Baking Powder",
+              "get": "You put the recipe into your inventory",
+              "use": ""
+            }
+          }
+        ],
+        "dialog": ["%s: Hello, Spacewalker"]
+      }
+    ],
+    "monster": null
+  },
+  {
+    "name": "Sector 3",
+    "description": "There are people walking by, you see something that looks like a door on the floor \nwhich you’d like to check out sometime, with the Information Center to the west, \nthe Medical Bay to the East, Mess Hall to the south, and sector 4 to the north. ",
+    "exits": {
+      "north": "Sector 4",
+      "south": "Mess Hall",
+      "east": "Medical Bay",
+      "west": "Information Center"
+    },
+    "items": [],
+    "characters": [],
+    "monster": null
+  },
+  {
+    "name": "Bilge",
+    "description": "It’s an interesting space, lots of under the table trading going on, \nmaybe you could find something interesting here? \nYou can exit (up) to go back to Sector 3.",
+    "exits": {
+      "up": "Sector 3"
+    },
+    "items": [],
+    "characters": [
+      {
+        "name": "Shadowy Figure",
+        "description": "The shadows prevent you from getting a clear look at their face.",
+        "actionResponse": {
+          "look": "The shadows prevent you from getting a clear look at their face.",
+          "talk": "You hesitantly talk to the Shadowy Figure"
+        },
+        "items": [
+          {
+            "name": "Noodles",
+            "description": "Can’t make spaghetti without the noodles!",
+            "actionResponse": {
+              "look": "Can’t make spaghetti without the noodles!",
+              "get": "You put the noodles in your inventory.",
+              "use": "",
+              "drop": "You drop the noodles on the ground."
+            }
+          }
+        ],
+        "dialog": ["%s: Hello, Spacewalker"]
+      }
+    ],
+    "monster": null
+  },
+  {
+    "name": "Information Center",
+    "description": "The Information Center is the place to get information on almost anything you’d be curious about. \nThe information center liaison is just the person to talk to in order to check out a GPS for use on the discovery pod. \nWith Sector 3 to the east, nothing else surrounds the Information Center.",
+    "exits": {
+      "east": "Sector 3"
+    },
+    "items": [],
+    "characters": [
+      {
+        "name": "Information Center Liaison",
+        "description": "They look like they might have some useful information.",
+        "actionResponse": {
+          "look": "They look like they might have some useful information.",
+          "talk": "You politely greet the Information Center Liason"
+        },
+        "items": [
+          {
+            "name": "GPS",
+            "description": "A device that can be used to track your location and navigate.",
+            "actionResponse": {
+              "look": "A device that can be used to track your location and navigate.",
+              "get": "You put the GPS in your inventory.",
+              "use": "",
+              "drop": "You drop the GPS on the ground."
+            }
+          }
+        ],
+        "dialog": ["%s: Hello, Spacewalker"]
+      }
+    ],
+    "monster": null
+  },
+  {
+    "name": "Medical Bay",
+    "description": "There don’t seem to be any patients today. You see a lab tech sweeping the deck. \nMaybe they know where some ingredients are",
+    "exits": {
+      "west": "Sector 3"
+    },
+    "items": [],
+    "characters": [
+      {
+        "name": "Lab Technician",
+        "description": "They seem bored.",
+        "actionResponse": {
+          "look": "They seem bored.",
+          "talk": "You greet the Lab Technician"
+        },
+        "items": [
+          {
+            "name": "Tofu",
+            "description": "This will be good with some curry powder.",
+            "actionResponse": {
+              "look": "This will be good with some curry powder.",
+              "get": "You put the tofu in your inventory for later.",
+              "use": "",
+              "drop": "You drop the Tofu on the ground."
+            }
+          }
+        ],
+        "dialog": ["%s: Hello, Spacewalker"]
+      }
+    ],
+    "monster": null
+  },
+  {
+    "name": "Sector 4",
+    "description": "There are lots of important people walking by. Better get through here quickly.",
+    "exits": {
+      "north": "North Sky Bridge",
+      "south": "Sector 3"
+    },
+    "items": [],
+    "characters": [],
+    "monster": null
+  },
+  {
+    "name": "Command Center",
+    "description": "This door is locked.",
+    "exits": {},
+    "items": [],
+    "characters": [],
+    "monster": null
+  },
+  {
+    "name": "Engineering Spaces",
+    "description": "This door is locked",
+    "exits": {},
+    "items": [],
+    "characters": [],
+    "monster": null
+  },
+  {
+    "name": "North Sky Bridge",
+    "description": "As you walk into the Sky Bridge, the airlock shuts behind you. \nYou see spacesuits prepared for use and a Pod Technician taking logs. \nThe Pod Technician might know which planet the ingredient you seek could be on, why don’t we ask him?",
+    "exits": {
+      "north": "Discovery Pod",
+      "south": "Sector 4"
+    },
+    "items": [
+      {
+        "name": "Spacesuit",
+        "description": "You must equip this before going to the floating garden or discovery pod.",
+        "actionResponse": {
+          "look": "You must equip this before going to the floating garden or discovery pod.",
+          "get": "You put the spacesuit in your inventory.",
+          "equip": "You put the spacesuit on.",
+          "drop": "You drop the spacesuit on the ground."
+        }
+      }
+    ],
+    "characters": [
+      {
+        "name": "Pod Technician",
+        "description": "Their tool belt looks heavy.",
+        "actionResponse": {
+          "look": "Their tool belt looks heavy.",
+          "talk": "You greet the Pod Technician"
+        },
+        "items": [
+          {
+            "name": "Key",
+            "description": "This doesn't appear to be a door key.",
+            "actionResponse": {
+              "look": "This doesn't appear to be a door key.",
+              "get": "You pick up the key, which feels surprisingly heavy in your hand.",
+              "use": "",
+              "drop": "Your key was dropped. You are losing some access with key drop."
+            }
+          }
+        ],
+        "dialog": ["%s: Hello, Spacewalker"]
+      }
+    ],
+    "monster": null
+  },
+  {
+    "name": "Discovery Pod",
+    "description": "The doorway to discovery! \nThe discovery pod is your ticket to exploring the many planets this section of the Milky Way has to offer. \nYou’re able to use the GPS to navigate to one of the 5 planets (relatively to the ship)",
+    "exits": {
+      "south": "North Sky Bridge"
+    },
+    "items": [
+      {
+        "name": "Pepper",
+        "description": "Wonder how old this is…",
+        "actionResponse": {
+          "look": "Wonder how old this is…",
+          "get": "You put the pepper shaker in your inventory for later",
+          "use": "",
+          "drop": "Sorry to see you drop pepper. How can people cook lamb or beef without pepper."
+        }
+      }
+    ],
+    "characters": [],
+    "monster": null
+  },
+  {
+    "name": "North Volcano Planet",
+    "description": "This quadrant is home a shiny space rock, maybe it can be traded for something else of value?",
+    "exits": {
+      "south": "South Volcano Planet",
+      "west": "West Volcano Planet",
+      "east": "East Volcano Planet"
+    },
+    "items": [
+      {
+        "name": "Space Rock",
+        "description": "shiny space rock",
+        "actionResponse": {
+          "look": "shiny space rock",
+          "get": "You put the rock in your inventory. It's heavier than it looks!",
+          "use": "",
+          "drop": "Space rock drop down. A small earthquack would occur."
+        }
+      }
+    ],
+    "characters": [],
+    "monster": null
+  },
+  {
+    "name": "South Volcano Planet",
+    "description": "This quadrant is just a fiery landscape. \nThere seems to be a random alien here as well.",
+    "exits": {
+      "north": "North Volcano Planet",
+      "west": "West Volcano Planet",
+      "east": "East Volcano Planet"
+    },
+    "items": [],
+    "characters": [
+      {
+        "name": "Random Alien",
+        "description": "They don't seem very interested in you.",
+        "actionResponse": {
+          "look": "They don't seem very interested in you.",
+          "talk": "You greet the Random Alien in a common alien language."
+        },
+        "items": [],
+        "dialog": ["%s: Hello, Spacewalker"]
+      }
+    ],
+    "monster": null
+  },
+  {
+    "name": "West Volcano Planet",
+    "description": "This quadrant is just...hot. \nNothing of interest here. Maybe the other quadrants will be interesting.",
+    "exits": {
+      "north": "North Volcano Planet",
+      "south": "South Volcano Planet",
+      "east": "East Volcano Planet"
+    },
+    "items": [],
+    "characters": [],
+    "monster": null
+  },
+  {
+    "name": "East Volcano Planet",
+    "description": "A mysterious Lava Monster is lurking in this quadrant. \nMaybe they'll have something we could use?",
+    "exits": {
+      "north": "North Volcano Planet",
+      "south": "South Volcano Planet",
+      "west": "West Volcano Planet"
+    },
+    "items": [],
+    "characters": [],
+    "monster": {
+      "name": "Lava Monster",
+      "description": "They probably don't ever get cold.",
+      "actionResponse": {
+        "look": "They probably don't ever get cold.",
+        "talk": "You fearfully greet the Lava Monster"
+      },
+      "items": [
+        {
+          "name": "Martian Meatballs",
+          "description": "You're too afraid to ask what these are made of.",
+          "actionResponse": {
+            "look": "You're too afraid to ask what these are made of.",
+            "get": "You put the meatballs in your inventory.",
+            "use": "",
+            "drop": "Meatballs drops from your pocket. "
+          }
+        }
+      ],
+      "dialog": ["%s: Hello, Spacewalker"]
+    }
+  },
+  {
+    "name": "North Rainforest Planet",
+    "description": "A Vine Monster rules this quadrant. \nShould you take your chances and talk to them?",
+    "exits": {
+      "south": "South Rainforest Planet",
+      "west": "West Rainforest Planet",
+      "east": "North Rainforest Planet"
+    },
+    "items": [],
+    "characters": [],
+    "monster": {
+      "name": "Vine Monster",
+      "description": "How many vines does it have? Too many to count.",
+      "actionResponse": {
+        "look": "How many vines does it have? Too many to count.",
+        "talk": "You fearfully greet the Vine Monster"
+      },
+      "items": [],
+      "dialog": ["%s: Hello, Spacewalker"]
+    }
+  },
+  {
+    "name": "South Rainforest Planet",
+    "description": "",
+    "exits": {
+      "north": "North Rainforest Planet",
+      "west": "West Rainforest Planet",
+      "east": "East Rainforest Planet"
+    },
+    "items": [],
+    "characters": [],
+    "monster": null
+  },
+  {
+    "name": "West Rainforest Planet",
+    "description": "A Random Creature roams this quadrant. It continues to rain heavily.",
+    "exits": {
+      "north": "North Rainforest Planet",
+      "south": "South Rainforest Planet",
+      "east": "East Rainforest Planet"
+    },
+    "items": [],
+    "characters": [
+      {
+        "name": "Random Creature",
+        "description": "They don't look very friendly...",
+        "actionResponse": {
+          "look": "They don't look very friendly...",
+          "talk": "You fearfully greet the Vine Monster"
+        },
+        "items": [],
+        "dialog": ["%s: Hello, Spacewalker"]
+      }
+    ],
+    "monster": null
+  },
+  {
+    "name": "East Rainforest Planet",
+    "description": "This quadrant's main feature is a Giant Snail Shell. \nCan we even fit that on the Discovery Pod?!",
+    "exits": {
+      "north": "North Rainforest Planet",
+      "south": "South Rainforest Planet",
+      "west": "West Rainforest Planet"
+    },
+    "items": [
+      {
+        "name": "Giant Snail Shell",
+        "description": "There’s no one living here anymore!",
+        "actionResponse": {
+          "look": "There’s no one living here anymore!",
+          "get": "You put the giant snail shell in your inventory. Ew, slimy!",
+          "use": "",
+          "drop": "You must be regret if you drom my cute giant snail shell."
+        }
+      }
+    ],
+    "characters": [],
+    "monster": null
+  },
+  {
+    "name": "North Snow Planet",
+    "description": "A super chilly place where ou always feel like you're doing the Ice Bucket Challenge. \nNothing here except cold wind.",
+    "exits": {
+      "north": "South Snow Planet",
+      "west": "West Snow Planet",
+      "east": "East Snow Planet"
+    },
+    "items": [],
+    "characters": [],
+    "monster": null
+  },
+  {
+    "name": "South Snow Planet",
+    "description": "Good place to go skating in case you feel bored. \nThere’s nothing to see here except snow as far the eye can see. \nThere are more quadrants to the North, West & East.",
+    "exits": {
+      "north": "North Snow Planet",
+      "west": "West Snow Planet",
+      "east": "East Snow Planet"
+    },
+    "items": [],
+    "characters": [],
+    "monster": null
+  },
+  {
+    "name": "West Snow Planet",
+    "description": "Living here for a long time can help you become a great figure skater \nA sparkly object is on the ground nearby.",
+    "exits": {
+      "north": "North Snow Planet",
+      "south": "South Snow Planet",
+      "east": "East Snow Planet"
+    },
+    "items": [
+      {
+        "name": "Snowflake Crystal",
+        "description": "An oddity that won’t melt, but holds the same sparkle as a snowflake!",
+        "actionResponse": {
+          "look": "An oddity that won’t melt, but holds the same sparkle as a snowflake!",
+          "get": "As you pick up the crystal, you feel a surge of power flow through your body. \nYou put the crystal in your inventory.",
+          "use": "",
+          "drop": "Idiot, you won't believe how much you just dropped."
+        }
+      }
+    ],
+    "characters": [],
+    "monster": null
+  },
+  {
+    "name": "East Snow Planet",
+    "description": "An Ice Monster roams this quadrant, and might have something interesting.\nThere are more quadrants to the North, South & West. ",
+    "exits": {
+      "north": "North Snow Planet",
+      "south": "South Snow Planet",
+      "west": "West Snow Planet"
+    },
+    "items": [],
+    "characters": [],
+    "monster": {
+      "name": "Ice Monster",
+      "description": "They look like they could freeze you solid.",
+      "actionResponse": {
+        "look": "They look like they could freeze you solid.",
+        "talk": "You fearfully greet the Ice Monster"
+      },
+      "items": [
+        {
+          "name": "Cosmic Curry Powder",
+          "description": "Curry is perfect for cold weather.",
+          "actionResponse": {
+            "look": "Curry is perfect for cold weather.",
+            "get": "You put the Curry Powder in your inventory for later.",
+            "use": "",
+            "drop": "Are you crazy? You just drop cosmic curry powder."
+          }
+        }
+      ],
+      "dialog": ["%s: Hello, Spacewalker"]
+    }
+  },
+  {
+    "name": "North Swamp Planet",
+    "description": "Nothing here except a space walker. There are other quadrants to the South, West & East",
+    "exits": {
+      "north": "North Swamp Planet",
+      "south": "South Swamp Planet",
+      "west": "West Swamp Planet"
+    },
+    "items": [],
+    "characters": [
+      {
+        "name": "Spacewalker Felix",
+        "description": "You don't see a pod anywhere, how did they get here?",
+        "actionResponse": {
+          "look": "You don't see a pod anywhere, how did they get here?",
+          "talk": "You greet Spacewalker Felix"
+        },
+        "items": [],
+        "dialog": ["%s: Hello, Spacewalker"]
+      }
+    ],
+    "monster": null
+  },
+  {
+    "name": "South Swamp Planet",
+    "description": "A Swamp Monster is guarding something. I wonder what they're guarding?  \nThe weather on this planet is humid, and the swamp is a mystery.",
+    "exits": {
+      "north": "North Swamp Planet",
+      "west": "West Swamp Planet",
+      "east": "East Swamp Planet"
+    },
+    "items": [],
+    "characters": [],
+    "monster": {
+      "name": "Swamp Monster",
+      "description": "You see the monster's eyes peeking out from the swamp.",
+      "actionResponse": {
+        "look": "You see the monster's eyes peeking out from the swamp water.",
+        "talk": "You fearfully greet the Swamp Monster"
+      },
+      "items": [
+        {
+          "name": "Terrestrial Space Fish",
+          "description": "This space fish lives on land.",
+          "actionResponse": {
+            "look": "This space fish lives on land.",
+            "get": "You put the fish in your inventory for later.",
+            "use": "",
+            "drop": "Oh, my heart breaks, you dropped this precious fish"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "West Swamp Planet",
+    "description": "Nothing here except an interesting fossil of a frog. There are more quadrants to the North, South & East.",
+    "exits": {
+      "north": "North Swamp Planet",
+      "west": "South Swamp Planet",
+      "east": "East Swamp Planet"
+    },
+    "items": [
+      {
+        "name": "Frog Fossil",
+        "description": "You can see the frog's skeleton in the rock.",
+        "actionResponse": {
+          "look": "You can see the frog's skeleton in the rock.",
+          "get": "You put the fossil in your inventory.",
+          "use": "",
+          "drop": "Wait, how can we finish the lab research after you dropped the frog fossil"
+        }
+      }
+    ],
+    "characters": [],
+    "monster": null
+  },
+  {
+    "name": "East Swamp Planet",
+    "description": "",
+    "exits": {
+      "north": "North Swamp Planet",
+      "west": "West Swamp Planet",
+      "east": "East Swamp Planet"
+    },
+    "items": [],
+    "characters": [],
+    "monster": null
+  },
+  {
+    "name": "North Desert Planet",
+    "description": "",
+    "exits": {
+      "south": "South Desert Planet",
+      "west": "West Desert Planet",
+      "east": "East Desert Planet"
+    },
+    "items": [],
+    "characters": [],
+    "monster": null
+  },
+  {
+    "name": "South Desert Planet",
+    "description": "",
+    "exits": {
+      "north": "North Desert Planet",
+      "west": "West Desert Planet",
+      "east": "East Desert Planet"
+    },
+    "items": [
+      {
+        "name": "Lightning Glass",
+        "description": "It shines in the light.",
+        "actionResponse": {
+          "look": "It shines in the light.",
+          "get": "You carefully pick up the glass and put it in your inventory.",
+          "use": "",
+          "drop": "Our world will never have light"
+        }
+      }
+    ],
+    "characters": [
+      {
+        "name": "Desert Alien",
+        "description": "They seem to be handling the heat just fine.",
+        "actionResponse": {
+          "look": "They seem to be handling the heat just fine.",
+          "talk": "You greet the Desert Alien in the Desert Planet language."
+        },
+        "items": [],
+        "dialog": ["%s: Hello, Spacewalker"]
+      }
+    ],
+    "monster": null
+  },
+  {
+    "name": "West Desert Planet",
+    "description": "",
+    "exits": {
+      "north": "North Desert Planet",
+      "south": "South Desert Planet",
+      "east": "East Desert Planet"
+    },
+    "items": [],
+    "characters": [],
+    "monster": {
+      "name": "Sand Monster",
+      "description": "It's hard to tell where the sand starts and the sand monster ends.",
+      "actionResponse": {
+        "look": "It's hard to tell where the sand starts and the sand monster ends.",
+        "talk": ""
+      },
+      "items": [
+        {
+          "name": "Baking Powder",
+          "description": "Does this mean baking powder is made of sand?",
+          "actionResponse": {
+            "look": "Does this mean baking powder is made of sand?",
+            "get": "You carefully scoop up some of the powder into a small container, being careful not to spill any. You put it in your inventory for later.",
+            "use": "",
+            "drop": "I guess your oven doesn't work"
+          }
+        }
+      ],
+      "dialog": ["%s: Hello, Spacewalker"]
+    }
+  },
+  {
+    "name": "East Desert Planet",
+    "description": "",
+    "exits": {
+      "north": "North Desert Planet",
+      "south": "South Desert Planet",
+      "west": "West Desert Planet"
+    },
+    "items": [],
+    "characters": [],
+    "monster": null
+  },
+  {
+    "name": "Floating Gardens",
+    "description": "The floating gardens is the place to meet crewmates from other ships in the fleet! The ships have visited many different parts of the galaxy/universe and some folks might be willing to trade some tasty ingredients for some interesting planet artifacts!",
+    "exits": {
+      "north": "South Sky Bridge"
+    },
+    "items": [
+      {
+        "name": "Flour",
+        "description": "A small satchel of flour that makes your hands powdery.",
+        "actionResponse": {
+          "look": "A small satchel of flour that makes your hands powdery.",
+          "get": "You put the flour in your inventory for later.",
+          "use": "",
+          "drop": "Please let me say goodbye to any bread ever"
+        }
+      }
+    ],
+    "characters": [
+      {
+        "name": "Spacewalker Sam",
+        "description": "Their spacesuit is definitely too long for them.",
+        "actionResponse": {
+          "look": "Their spacesuit is definitely too long for them.",
+          "talk": "You greet Spacewalker Sam"
+        },
+        "items": [
+          {
+            "name": "Tomato Sauce",
+            "description": "A rich and flavorful tomato sauce, perfect for pasta or as a base for other dishes.",
+            "actionResponse": {
+              "look": "A rich and flavorful tomato sauce, perfect for pasta or as a base for other dishes.",
+              "get": "You put the tomato sauce in your inventory. ",
+              "use": "",
+              "drop": "You have make me lost the awesome memory about french-fry."
+            }
+          }
+        ],
+        "dialog": ["%s: Hello, Spacewalker"]
+      },
+      {
+        "name": "Spacewalker Nyckolle",
+        "description": "They love talking about recipes!",
+        "actionResponse": {
+          "look": "They love talking about recipes!",
+          "talk": "You greet Spacewalker Nyckolle"
+        },
+        "items": [
+          {
+            "name": "Salsa",
+            "description": "It has some spice to it, but would go great with seafood!",
+            "actionResponse": {
+              "look": "It has some spice to it, but would go great with seafood!",
+              "get": "You put the salsa in your inventory.",
+              "use": "",
+              "drop": "I appreciate you dropped this Salsa."
+            }
+          }
+        ],
+        "dialog": ["%s: Hello, Spacewalker"]
+      },
+      {
+        "name": "Spacewalker Kun",
+        "description": "They might be interested in trading.",
+        "actionResponse": {
+          "look": "They might be interested in trading.",
+          "talk": "You greet Spacewalker Kun"
+        },
+        "items": [
+          {
+            "name": "Lunar Lamb Chops",
+            "description": "Several lamb chops, ready to be cooked.",
+            "actionResponse": {
+              "look": "Several lamb chops, ready to be cooked.",
+              "get": "You put the lamb chops in your inventory.",
+              "use": "",
+              "drop": "Oh no!!!, That is my favorite lamb chops, you are killing me."
+            }
+          }
+        ],
+        "dialog": ["%s: Hello, Spacewalker"]
+      },
+      {
+        "name": "Spacewalker Jasper",
+        "description": "They're always hanging out in the floating garden.",
+        "actionResponse": {
+          "look": "They're always hanging out in the floating garden.",
+          "talk": "You greet Spacewalker Jasper"
+        },
+        "items": [
+          {
+            "name": "Rice",
+            "description": "A fragrant and flavorful rice that pairs well with many dishes.",
+            "actionResponse": {
+              "look": "A fragrant and flavorful rice that pairs well with many dishes.",
+              "get": "You scoop up a handful of rice, admiring the way it shimmers in the light. You put the rice in your inventory.",
+              "use": "You cook the rice to perfection, enjoying the aroma and the delicate flavor.",
+              "drop": "This is not good new for asian people."
+            }
+          }
+        ],
+        "dialog": ["%s: Hello, Spacewalker"]
+      }
+    ],
+    "monster": null
+  }
+]

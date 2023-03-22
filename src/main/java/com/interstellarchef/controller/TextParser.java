@@ -27,11 +27,15 @@ public class TextParser {
     String playerCurrentLocation = String.format(gameText.getCurrentLocationWidget(), game.getCurrentLocation().getName());
     String playerAvailableExits = String.format(gameText.getAvailableExitWidget(), game.getCurrentLocation().printExits());
     String currentRoomItems = String.format(gameText.getRoomItemsWidget(), game.getCurrentLocation().printItems());
+    String currentRoomCharacters = String.format(gameText.getRoomCharactersWidget(), game.getCurrentLocation().printCharacters());
+    String currentEquippedItem = String.format(gameText.getEquippedItemWidget(), game.getPlayer().printEquippedItem());
     while(!valid){
       System.out.println(playerStatusDivider);
       System.out.println(playerCurrentLocation);
       System.out.println(playerAvailableExits);
       System.out.println(currentRoomItems);
+      System.out.println(currentRoomCharacters);
+      System.out.println(currentEquippedItem);
       System.out.println(playerStatusDivider);
       System.out.println(gameText.getPromptActionMessage());
       String input = gameController.getUserInput();
@@ -59,6 +63,7 @@ public class TextParser {
         System.out.println(gameText.getInvalidActionMessage());
       } else {
         valid = true;
+        System.out.println(gameText.getPressEnterMessage());
       }
     }
 
@@ -82,7 +87,8 @@ public class TextParser {
     if (action.equalsIgnoreCase("talk")) { //todo: include synonyms and load from json
       for(Character character: game.getCurrentLocation().getCharacters()){
         if(noun.equalsIgnoreCase(character.getName())){
-            return character.getName();
+          character.talk();
+          return character.getName();
         }
       }
     }
@@ -91,6 +97,20 @@ public class TextParser {
     //look item, location, character
     if(action.equalsIgnoreCase("look")) {
       return game.look(noun);
+    }
+
+    //get item
+    if(action.equalsIgnoreCase("get")) {
+      return game.get(noun);
+    }
+
+    //drop item
+    if(action.equalsIgnoreCase("drop")) {
+      return game.drop(noun);
+    }
+
+    if (action.equalsIgnoreCase("equip")) {
+      return game.getPlayer().equipItem(noun);
     }
 
     //check items in current room
@@ -108,7 +128,7 @@ public class TextParser {
     }
 
     //check items in inventory
-    for(Item item: game.getInventory().getItems()){
+    for(Item item: game.getPlayer().getInventory().getItems()){
       if(noun.equalsIgnoreCase(item.getName())){
         for (String allowedAction : item.getActionResponse().keySet()) {
           //checks if action can be performed on item
@@ -123,6 +143,5 @@ public class TextParser {
 
     return result;
   }
-
 
 }

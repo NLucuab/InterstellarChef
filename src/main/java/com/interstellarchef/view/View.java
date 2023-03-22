@@ -18,7 +18,7 @@ public class View {
         clearScreen();
         System.out.println(gameText.getGameBanner());
         System.out.println(gameText.getGreeting());
-        System.out.println(gameText.getPressEnterMessage());
+        System.out.println(gameText.getPressEnterMessageCentered());
     }
 
     public void printGameIntro(){

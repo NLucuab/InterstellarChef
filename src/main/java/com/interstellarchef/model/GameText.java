@@ -4,6 +4,7 @@ public class GameText {
   private String gameBanner;
   private String greeting;
   private String gameIntro;
+  private String pressEnterMessageCentered;
   private String pressEnterMessage;
   private String newGameMessage;
   private String affirmative;
@@ -19,6 +20,9 @@ public class GameText {
   private String currentLocationWidget;
   private String availableExitWidget;
   private String roomItemsWidget;
+  private String roomCharactersWidget;
+
+  private String equippedItemWidget;
 
   public String getGameBanner() {
     return gameBanner;
@@ -40,16 +44,24 @@ public class GameText {
     return gameIntro;
   }
 
+  public void setGameIntro(String gameIntro) {
+    this.gameIntro = gameIntro;
+  }
+
+  public String getPressEnterMessageCentered() {
+    return pressEnterMessageCentered;
+  }
+
+  public void setPressEnterMessageCentered(String pressEnterMessageCentered) {
+    this.pressEnterMessageCentered = pressEnterMessageCentered;
+  }
+
   public String getPressEnterMessage() {
     return pressEnterMessage;
   }
 
   public void setPressEnterMessage(String pressEnterMessage) {
     this.pressEnterMessage = pressEnterMessage;
-  }
-
-  public void setGameIntro(String gameIntro) {
-    this.gameIntro = gameIntro;
   }
 
   public String getNewGameMessage() {
@@ -162,5 +174,21 @@ public class GameText {
 
   public void setRoomItemsWidget(String roomItemsWidget) {
     this.roomItemsWidget = roomItemsWidget;
+  }
+
+  public String getRoomCharactersWidget() {
+    return roomCharactersWidget;
+  }
+
+  public void setRoomCharactersWidget(String roomCharactersWidget) {
+    this.roomCharactersWidget = roomCharactersWidget;
+  }
+
+  public String getEquippedItemWidget() {
+    return equippedItemWidget;
+  }
+
+  public void setEquippedItemWidget(String equippedItemWidget) {
+    this.equippedItemWidget = equippedItemWidget;
   }
 }
