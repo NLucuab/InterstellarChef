@@ -44,7 +44,7 @@
           "look": "You must equip this before going to the floating garden or discovery pod.",
           "get": "You put the spacesuit in your inventory.",
           "equip": "You put the spacesuit on.",
-          "drop": "You take off the spacesuit and leave it on the ground."
+          "drop": "You leave the spacesuit on the ground."
         }
       }
     ],
@@ -65,7 +65,7 @@
     "monster": null
   },
   {
-    "name": "Pressurized Garden",
+    "name": "Pressurized Gardens",
     "description": "The space is filled with edible and medicinal plants. \nYou see a gardener watering some vegetables.",
     "exits": {
       "west": "Sector 1"
@@ -91,7 +91,8 @@
             }
           }
         ],
-        "dialog": ["%s: Hello, Spacewalker"]
+        "dialog": ["%s: Check this out! Plants are amazing, aren’t they?", "%s: What a lovely day for gardening!"],
+        "desiredItem": null
       }
     ],
     "monster": null
@@ -123,7 +124,8 @@
             }
           }
         ],
-        "dialog": ["%s: Hello, Spacewalker"]
+        "dialog": ["%s: I always sneak into the kitchen for extra gains. Shh, don’t tell anyone!","%s: Whoa, that butter gave you killer biceps!!" ],
+        "desiredItem": null
       }
     ],
     "monster": null
@@ -144,7 +146,9 @@
   {
     "name": "Bathrooms",
     "description": "Looks like a normal bathroom.",
-    "exits": {},
+    "exits": {
+      "west": "Sector 2"
+    },
     "items": [],
     "characters": [],
     "monster": null
@@ -178,7 +182,8 @@
             }
           }
         ],
-        "dialog": ["%s: Hello, Spacewalker"]
+        "dialog": ["%s: Want these? I got an extra bag at the commissary.","%s: You can never have too many Tortillas."],
+        "desiredItem": null
       }
     ],
     "monster": null
@@ -256,7 +261,8 @@
             }
           }
         ],
-        "dialog": ["%s: Hello, Spacewalker"]
+        "dialog": ["%s: Hello, Sous Chef!"],
+        "desiredItem": null
       }
     ],
     "monster": null
@@ -268,7 +274,8 @@
       "north": "Sector 4",
       "south": "Mess Hall",
       "east": "Medical Bay",
-      "west": "Information Center"
+      "west": "Information Center",
+      "down": "Bilge"
     },
     "items": [],
     "characters": [],
@@ -301,7 +308,8 @@
             }
           }
         ],
-        "dialog": ["%s: Hello, Spacewalker"]
+        "dialog": ["%s: Get me some Snacks and I'll give you a reward.","%s: Mmm... stolen Snacks always taste the best."],
+        "desiredItem": "Snacks"
       }
     ],
     "monster": null
@@ -333,7 +341,8 @@
             }
           }
         ],
-        "dialog": ["%s: Hello, Spacewalker"]
+        "dialog": ["%s: Do you need a GPS? They can be used to navigate to the Volcano Planet, \nthe Rainforest Planet, the Snow Planet, the Swamp Planet and the Desert Planet.", "%s: Traveling to distant planets can be dangerous. Be careful!"],
+        "desiredItem": null
       }
     ],
     "monster": null
@@ -365,7 +374,8 @@
             }
           }
         ],
-        "dialog": ["%s: Hello, Spacewalker"]
+        "dialog": ["%s: Did you know the ship’s tofu is lab-grown","%s: Tofu is delicious, no matter where it came from." ],
+        "desiredItem": null
       }
     ],
     "monster": null
@@ -432,11 +442,12 @@
               "look": "This doesn't appear to be a door key.",
               "get": "You pick up the key, which feels surprisingly heavy in your hand.",
               "use": "",
-              "drop": "Your key was dropped. You are losing some access with key drop."
+              "drop": "Your key was dropped. How will you fly the Discovery Pod?"
             }
           }
         ],
-        "dialog": ["%s: Hello, Spacewalker"]
+        "dialog": ["%s: You sure you know how to fly this thing? Make sure you use gps.","%s: Safe travels!"],
+        "desiredItem": null
       }
     ],
     "monster": null
@@ -455,7 +466,7 @@
           "look": "Wonder how old this is…",
           "get": "You put the pepper shaker in your inventory for later",
           "use": "",
-          "drop": "Sorry to see you drop pepper. How can people cook lamb or beef without pepper."
+          "drop": "You drop the pepper on the ground. How can you cook lamb or beef without pepper?"
         }
       }
     ],
@@ -478,7 +489,7 @@
           "look": "shiny space rock",
           "get": "You put the rock in your inventory. It's heavier than it looks!",
           "use": "",
-          "drop": "Space rock drop down. A small earthquack would occur."
+          "drop": "You drop the heavy Space Rock on the ground. A small earthquake occurs."
         }
       }
     ],
@@ -503,7 +514,19 @@
           "talk": "You greet the Random Alien in a common alien language."
         },
         "items": [],
-        "dialog": ["%s: Hello, Spacewalker"]
+        "dialog": [
+          "%s: Hello, Spacewalker, have you ever tried the local hot springs? They're great for relaxing after a long day of running away from lava.",
+          "%s: Hello, Spacewalker, I'm not saying I'm an expert on volcanoes, but I do have a PhD in lava dodging.",
+          "%s: Hello, Spacewalker, if you want to impress the locals, try eating a volcano pepper. Just don't come crying to me when your insides start to melt.",
+          "%s: Hello, Spacewalker, I'm convinced that the only reason the volcanoes on this planet erupt so often is because they're angry at us for being so delicious.",
+          "%s: Hello, Spacewalker, I once tried to ride a lava flow like a surfboard. It did not end well.",
+          "%s: Hello, Spacewalker, do you know what they call a group of aliens who live near a volcano? Toast.",
+          "%s: Hello, Spacewalker, I've always said that the key to survival on this planet is to have a good pair of running shoes and a healthy fear of molten rock.",
+          "%s: Hello, Spacewalker, some aliens come to this planet for the thrill of dodging lava. I'm just here for the marshmallows.",
+          "%s: Hello, Spacewalker, I heard a rumor that the volcanoes on this planet are actually giant alien barbecue grills. Just don't tell the humans.",
+          "%s: Hello, Spacewalker, if you ever need a place to stay, I've got a spare lava-proof igloo. It's not much, but it's home."
+        ],
+        "desiredItem": null
       }
     ],
     "monster": null
@@ -532,7 +555,12 @@
     "characters": [],
     "monster": {
       "name": "Lava Monster",
-      "description": "They probably don't ever get cold.",
+      "description": "They probably don't ever get cold. You see Martian Meatballs sizzling in the lava.",
+      "riddles": {
+        "I am hot and molten, and reside underneath the Earth's crust. \nWhat am I? " : "Magma",
+        "I am a type of lava flow. I appear smooth, and have a low viscosity. \nWhat is my name?": "Pahoehoe",
+        "I am a large crater caused by a volcanic explosion that collapses into a depression. \nWhat am I?": "Caldera"
+      },
       "actionResponse": {
         "look": "They probably don't ever get cold.",
         "talk": "You fearfully greet the Lava Monster"
@@ -545,11 +573,12 @@
             "look": "You're too afraid to ask what these are made of.",
             "get": "You put the meatballs in your inventory.",
             "use": "",
-            "drop": "Meatballs drops from your pocket. "
+            "drop": "The Meatballs drop from your pocket. "
           }
         }
       ],
-      "dialog": ["%s: Hello, Spacewalker"]
+      "dialog": ["%s: Hello, Spacewalker"],
+      "desiredItem": null
     }
   },
   {
@@ -558,19 +587,25 @@
     "exits": {
       "south": "South Rainforest Planet",
       "west": "West Rainforest Planet",
-      "east": "North Rainforest Planet"
+      "east": "East Rainforest Planet"
     },
     "items": [],
     "characters": [],
     "monster": {
       "name": "Vine Monster",
       "description": "How many vines does it have? Too many to count.",
+      "riddles": {
+        "I am a spotted cat and I do not roar. \nI live on the forest floor and in the understory. \nWhat am I?": "Jaguar",
+        "I am a furry creature with eight legs. \nI hide during the day and come out at night to hunt small birds and reptiles. \nWhat am I?": "Tarantula",
+        "I am a mammal. I can climb trees but I usually live on the forest floor. \nI am seven feet long from my nose to my tail. I eat termites and ants. \nWhat am I?": "Anteater"
+      },
       "actionResponse": {
         "look": "How many vines does it have? Too many to count.",
         "talk": "You fearfully greet the Vine Monster"
       },
       "items": [],
-      "dialog": ["%s: Hello, Spacewalker"]
+      "dialog": ["%s: Hello, Spacewalker"],
+      "desiredItem": null
     }
   },
   {
@@ -600,10 +635,22 @@
         "description": "They don't look very friendly...",
         "actionResponse": {
           "look": "They don't look very friendly...",
-          "talk": "You fearfully greet the Vine Monster"
+          "talk": "You fearfully greet the Random Creature"
         },
         "items": [],
-        "dialog": ["%s: Hello, Spacewalker"]
+        "dialog": [
+          "%s: Hello, Spacewalker, I don't always climb trees, but when I do, I fall out of them",
+          "%s: Hello, Spacewalker, Have you ever tried the local fruit? It's delicious! Except for the ones that are secretly trying to kill you.",
+          "%s: Hello, Spacewalker, I'm not saying I'm the king of the jungle, but I do have a really cool crown made of leaves and twigs.",
+          "%s: Hello, Spacewalker, I once tried to have a staring contest with a sloth. I lost, but it was worth it.",
+          "%s: Hello, Spacewalker, if you're ever lost in the rainforest, just follow the sound of my terrible singing. I promise, it won't lead you anywhere useful.",
+          "%s: Hello, Spacewalker, do you know why I'm always covered in mud? It's because I'm a master of disguise. Shh, don't tell anyone.",
+          "%s: Hello, Spacewalker, I heard that some Earthlings have a pet called a 'cat.' What's that? Is it delicious?",
+          "%s: Hello, Spacewalker, I'm not sure what's scarier - the giant snakes, or the tiny frogs that can kill you with a single touch.",
+          "%s: Hello, Spacewalker, if you need me, I'll be in my treehouse, playing video games and eating bugs. The good life.",
+          "%s: Hello, Spacewalker, I once challenged a chameleon to a game of hide-and-seek. It was a tie."
+        ],
+        "desiredItem": null
       }
     ],
     "monster": null
@@ -624,7 +671,7 @@
           "look": "There’s no one living here anymore!",
           "get": "You put the giant snail shell in your inventory. Ew, slimy!",
           "use": "",
-          "drop": "You must be regret if you drom my cute giant snail shell."
+          "drop": "You regretfully place the Giant Snail Shell on the ground."
         }
       }
     ],
@@ -635,7 +682,7 @@
     "name": "North Snow Planet",
     "description": "A super chilly place where ou always feel like you're doing the Ice Bucket Challenge. \nNothing here except cold wind.",
     "exits": {
-      "north": "South Snow Planet",
+      "south": "South Snow Planet",
       "west": "West Snow Planet",
       "east": "East Snow Planet"
     },
@@ -671,7 +718,7 @@
           "look": "An oddity that won’t melt, but holds the same sparkle as a snowflake!",
           "get": "As you pick up the crystal, you feel a surge of power flow through your body. \nYou put the crystal in your inventory.",
           "use": "",
-          "drop": "Idiot, you won't believe how much you just dropped."
+          "drop": "You drop the crystal on the ground."
         }
       }
     ],
@@ -690,7 +737,8 @@
     "characters": [],
     "monster": {
       "name": "Ice Monster",
-      "description": "They look like they could freeze you solid.",
+      "description": "They look like they could freeze you solid. You see Cosmic Curry Powder sticking out the monster's coat.",
+      "riddles": {},
       "actionResponse": {
         "look": "They look like they could freeze you solid.",
         "talk": "You fearfully greet the Ice Monster"
@@ -703,18 +751,19 @@
             "look": "Curry is perfect for cold weather.",
             "get": "You put the Curry Powder in your inventory for later.",
             "use": "",
-            "drop": "Are you crazy? You just drop cosmic curry powder."
+            "drop": "Are you crazy? You drop the delicious cosmic curry powder."
           }
         }
       ],
-      "dialog": ["%s: Hello, Spacewalker"]
+      "dialog": ["%s: Hello, Spacewalker"],
+      "desiredItem": null
     }
   },
   {
     "name": "North Swamp Planet",
     "description": "Nothing here except a space walker. There are other quadrants to the South, West & East",
     "exits": {
-      "north": "North Swamp Planet",
+      "east": "East Swamp Planet",
       "south": "South Swamp Planet",
       "west": "West Swamp Planet"
     },
@@ -728,7 +777,19 @@
           "talk": "You greet Spacewalker Felix"
         },
         "items": [],
-        "dialog": ["%s: Hello, Spacewalker"]
+        "dialog": [
+          "%s: Hello, Spacewalker, did you know that the mud here is so thick, even the mosquitoes have trouble flying through it?",
+          "%s: Hello, Spacewalker, I'm not afraid of the alligators here. It's the mosquitoes I'm worried about. They're the real predators.",
+          "%s: Hello, Spacewalker, I once saw a plant here that was so big, it tried to eat me. Luckily, I was too tough to digest.",
+          "%s: Hello, Spacewalker, if you need me, I'll be in my swamp hut, cooking up some 'gator gumbo. Want to try some?",
+          "%s: Hello, Spacewalker, I have a pet mosquito named Buzz. He's a real pain in the neck, but he's loyal.",
+          "%s: Hello, Spacewalker, I once tried to make a raft out of vines and leaves. It didn't work, but I ended up with a really cool hat.",
+          "%s: Hello, Spacewalker, the mosquitoes here are so big, they have landing strips for planes. No joke.",
+          "%s: Hello, Spacewalker, I once saw a frog here that was so big, it ate an alligator. Or maybe it was the other way around. I forget.",
+          "%s: Hello, Spacewalker, if you ever get lost in the swamp, just look for the giant neon sign that says 'Welcome to North Swamp Planet.' We spare no expense.",
+          "%s: Hello, Spacewalker, I once wrestled an alligator here. It was a draw, but I think he let me win."
+        ],
+        "desiredItem": null
       }
     ],
     "monster": null
@@ -745,7 +806,8 @@
     "characters": [],
     "monster": {
       "name": "Swamp Monster",
-      "description": "You see the monster's eyes peeking out from the swamp.",
+      "description": "You see the monster's eyes peeking out from the swamp. You see a Terrestrial Space Fish flopping in the monster's hand.",
+      "riddles": {},
       "actionResponse": {
         "look": "You see the monster's eyes peeking out from the swamp water.",
         "talk": "You fearfully greet the Swamp Monster"
@@ -758,7 +820,7 @@
             "look": "This space fish lives on land.",
             "get": "You put the fish in your inventory for later.",
             "use": "",
-            "drop": "Oh, my heart breaks, you dropped this precious fish"
+            "drop": "You drop the fish on the ground. Luckily, it's a terrestrial fish!"
           }
         }
       ]
@@ -769,7 +831,7 @@
     "description": "Nothing here except an interesting fossil of a frog. There are more quadrants to the North, South & East.",
     "exits": {
       "north": "North Swamp Planet",
-      "west": "South Swamp Planet",
+      "south": "South Swamp Planet",
       "east": "East Swamp Planet"
     },
     "items": [
@@ -780,7 +842,7 @@
           "look": "You can see the frog's skeleton in the rock.",
           "get": "You put the fossil in your inventory.",
           "use": "",
-          "drop": "Wait, how can we finish the lab research after you dropped the frog fossil"
+          "drop": "You drop the frog fossil on the ground."
         }
       }
     ],
@@ -793,7 +855,7 @@
     "exits": {
       "north": "North Swamp Planet",
       "west": "West Swamp Planet",
-      "east": "East Swamp Planet"
+      "south": "South Swamp Planet"
     },
     "items": [],
     "characters": [],
@@ -827,7 +889,7 @@
           "look": "It shines in the light.",
           "get": "You carefully pick up the glass and put it in your inventory.",
           "use": "",
-          "drop": "Our world will never have light"
+          "drop": "You carefully place the Lightning Glass on the ground."
         }
       }
     ],
@@ -840,7 +902,19 @@
           "talk": "You greet the Desert Alien in the Desert Planet language."
         },
         "items": [],
-        "dialog": ["%s: Hello, Spacewalker"]
+        "dialog": [
+          "%s: Hello, Spacewalker, I don't always drink water, but when I do, I prefer it with a side of sand.",
+          "%s: Hello, Spacewalker, I tried to make a sandcastle once, but it just turned into a pile of sand. Oops!",
+          "%s: Hello, Spacewalker, I love a good sandstorm. It's like a giant, sandy hug.",
+          "%s: Hello, Spacewalker, Do you have any idea how hard it is to find a good cactus to hug around here?",
+          "%s: Hello, Spacewalker, I once met a space cowboy who tried to lasso a sand dune. He wasn't very good.",
+          "%s: Hello, Spacewalker, Why did the desert alien cross the road? To get to the sand dune on the other side!",
+          "%s: Hello, Spacewalker, My favorite pastime is playing hide-and-seek with the tumbleweeds.",
+          "%s: Hello, Spacewalker, Have you tried our local delicacy, the sand sandwich? It's just sand between two slices of sand.",
+          "%s: Hello, Spacewalker, I heard that Earthlings have something called 'ice cream.' Sounds terrifying.",
+          "%s: Hello, Spacewalker, I used to be a sand castle architect, but I got sandbagged by the competition."
+        ],
+        "desiredItem": null
       }
     ],
     "monster": null
@@ -857,7 +931,12 @@
     "characters": [],
     "monster": {
       "name": "Sand Monster",
-      "description": "It's hard to tell where the sand starts and the sand monster ends.",
+      "description": "It's hard to tell where the sand starts and the sand monster ends. You see Baking Powder hidden in the dunes.",
+      "riddles": {
+        "What is the name for a place where stars are born?": "Nebula",
+        "What is a name for a natural satellite?" : "Moon",
+        "I can have 1 or 2 humps, a very long neck, and am known for taking long treks across the desert. \nWhat am I?": "Camel"
+      },
       "actionResponse": {
         "look": "It's hard to tell where the sand starts and the sand monster ends.",
         "talk": ""
@@ -870,11 +949,12 @@
             "look": "Does this mean baking powder is made of sand?",
             "get": "You carefully scoop up some of the powder into a small container, being careful not to spill any. You put it in your inventory for later.",
             "use": "",
-            "drop": "I guess your oven doesn't work"
+            "drop": "You drop the baking powder on the ground. A cloud of baking powder rises up into the air."
           }
         }
       ],
-      "dialog": ["%s: Hello, Spacewalker"]
+      "dialog": ["%s: Hello, Spacewalker"],
+      "desiredItem": null
     }
   },
   {
@@ -890,20 +970,20 @@
     "monster": null
   },
   {
-    "name": "Floating Gardens",
+    "name": "Floating Garden",
     "description": "The floating gardens is the place to meet crewmates from other ships in the fleet! The ships have visited many different parts of the galaxy/universe and some folks might be willing to trade some tasty ingredients for some interesting planet artifacts!",
     "exits": {
       "north": "South Sky Bridge"
     },
     "items": [
       {
-        "name": "Flour",
+        "name": "Flying Saucer Flour",
         "description": "A small satchel of flour that makes your hands powdery.",
         "actionResponse": {
           "look": "A small satchel of flour that makes your hands powdery.",
           "get": "You put the flour in your inventory for later.",
           "use": "",
-          "drop": "Please let me say goodbye to any bread ever"
+          "drop": "You drop the flour on the ground."
         }
       }
     ],
@@ -923,11 +1003,12 @@
               "look": "A rich and flavorful tomato sauce, perfect for pasta or as a base for other dishes.",
               "get": "You put the tomato sauce in your inventory. ",
               "use": "",
-              "drop": "You have make me lost the awesome memory about french-fry."
+              "drop": "You drop the tomato sauce on the ground. Splat!"
             }
           }
         ],
-        "dialog": ["%s: Hello, Spacewalker"]
+        "dialog": ["%s: Do you have any interesting fossils? I make the best spaghetti sauce, but I don’t give it to strangers for free.", "%s: If anyone asks, I'm not out here."],
+        "desiredItem": "Frog Fossil"
       },
       {
         "name": "Spacewalker Nyckolle",
@@ -944,11 +1025,12 @@
               "look": "It has some spice to it, but would go great with seafood!",
               "get": "You put the salsa in your inventory.",
               "use": "",
-              "drop": "I appreciate you dropped this Salsa."
+              "drop": "You drop the salsa on the ground."
             }
           }
         ],
-        "dialog": ["%s: Hello, Spacewalker"]
+        "dialog": ["%s: Salsa is my jam! I’ll trade you some for something sparkly from the snow planet!", "%s: Have you looked at all the plants?"],
+        "desiredItem": "Snowflake Crystal"
       },
       {
         "name": "Spacewalker Kun",
@@ -965,11 +1047,12 @@
               "look": "Several lamb chops, ready to be cooked.",
               "get": "You put the lamb chops in your inventory.",
               "use": "",
-              "drop": "Oh no!!!, That is my favorite lamb chops, you are killing me."
+              "drop": "You drop  the lamb chops."
             }
           }
         ],
-        "dialog": ["%s: Hello, Spacewalker"]
+        "dialog": ["%s: Have you been to the Volcano planet? I hear they have beautiful rocks there.", "%s: Did you end up cooking something nice?"],
+        "desiredItem": "Space Rock"
       },
       {
         "name": "Spacewalker Jasper",
@@ -986,11 +1069,12 @@
               "look": "A fragrant and flavorful rice that pairs well with many dishes.",
               "get": "You scoop up a handful of rice, admiring the way it shimmers in the light. You put the rice in your inventory.",
               "use": "You cook the rice to perfection, enjoying the aroma and the delicate flavor.",
-              "drop": "This is not good new for asian people."
+              "drop": "You drop the rice on the ground."
             }
           }
         ],
-        "dialog": ["%s: Hello, Spacewalker"]
+        "dialog": ["%s: Do you have any lightning glass? I have rice to trade.", "%s: There's nothing like a spacewalk in the morning."],
+        "desiredItem": "Lightning Glass"
       }
     ],
     "monster": null

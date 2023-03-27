@@ -1,6 +1,6 @@
 package com.interstellarchef.view;
 
-import com.interstellarchef.model.GameText;
+import com.interstellarchef.util.GameText;
 
 public class View {
 

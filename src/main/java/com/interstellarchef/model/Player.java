@@ -9,6 +9,11 @@ public class Player {
 
     }
 
+    public Player (Location inventory, Item equippedItem) {
+        this.inventory = inventory;
+        this.equippedItem = equippedItem;
+    }
+
     public Location getInventory() {
         return inventory;
     }

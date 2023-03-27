@@ -1,0 +1,177 @@
+[
+  {
+    "name": "Planetary Pancakes Recipe",
+    "ingredients": [
+      {
+        "name": "Baking Powder",
+        "description": "Does this mean baking powder is made of sand?",
+        "actionResponse": {
+          "look": "Does this mean baking powder is made of sand?",
+          "get": "You carefully scoop up some of the powder into a small container, being careful not to spill any. You put it in your inventory for later.",
+          "use": "",
+          "drop": "You drop the baking powder on the ground. A cloud of baking powder rises up into the air."
+        }
+      },
+      {
+        "name": "Milk",
+        "description": "This Milk must be plant-based.",
+        "actionResponse": {
+          "look": "This Milk must be plant-based.",
+          "get": "You put the Milk in your inventory for later. Hope it doesn't spill...",
+          "use": "",
+          "drop": "You drop the Milk on the ground. It splatters a little."
+        }
+      },
+      {
+        "name": "Flying Saucer Flour",
+        "description": "A small satchel of flour that makes your hands powdery.",
+        "actionResponse": {
+          "look": "A small satchel of flour that makes your hands powdery.",
+          "get": "You put the flour in your inventory for later.",
+          "use": "",
+          "drop": "You drop the flour on the ground."
+        }
+      }
+    ]
+  },
+  {
+    "name": "Lunar Lamb Recipe",
+    "ingredients": [
+      {
+        "name": "Butter",
+        "description": "This is a good source of calories.",
+        "actionResponse": {
+          "look": "This is a good source of calories.",
+          "get": "You put the Butter in your inventory for later. What if it melts?",
+          "use": "",
+          "drop": "You drop the Butter on the ground. It's now out of your inventory."
+        }
+      },
+      {
+        "name": "Pepper",
+        "description": "Wonder how old this is…",
+        "actionResponse": {
+          "look": "Wonder how old this is…",
+          "get": "You put the pepper shaker in your inventory for later",
+          "use": "",
+          "drop": "You drop the pepper on the ground. How can you cook lamb or beef without pepper?"
+        }
+      },
+      {
+        "name": "Lunar Lamb Chops",
+        "description": "Several lamb chops, ready to be cooked.",
+        "actionResponse": {
+          "look": "Several lamb chops, ready to be cooked.",
+          "get": "You put the lamb chops in your inventory.",
+          "use": "",
+          "drop": "You drop  the lamb chops."
+        }
+      }
+    ]
+  },
+  {
+    "name": "Space Spaghetti Recipe",
+    "ingredients": [
+      {
+        "name": "Tomato Sauce",
+        "description": "A rich and flavorful tomato sauce, perfect for pasta or as a base for other dishes.",
+        "actionResponse": {
+          "look": "A rich and flavorful tomato sauce, perfect for pasta or as a base for other dishes.",
+          "get": "You put the tomato sauce in your inventory. ",
+          "use": "",
+          "drop": "You drop the tomato sauce on the ground. Splat!"
+        }
+      },
+      {
+        "name": "Noodles",
+        "description": "Can’t make spaghetti without the noodles!",
+        "actionResponse": {
+          "look": "Can’t make spaghetti without the noodles!",
+          "get": "You put the noodles in your inventory.",
+          "use": "",
+          "drop": "You drop the noodles on the ground."
+        }
+      },
+      {
+        "name": "Martian Meatballs",
+        "description": "You're too afraid to ask what these are made of.",
+        "actionResponse": {
+          "look": "You're too afraid to ask what these are made of.",
+          "get": "You put the meatballs in your inventory.",
+          "use": "",
+          "drop": "The Meatballs drop from your pocket. "
+        }
+      }
+    ]
+  },
+  {
+    "name": "Cosmic Curry Recipe",
+    "ingredients": [
+      {
+        "name": "Rice",
+        "description": "A fragrant and flavorful rice that pairs well with many dishes.",
+        "actionResponse": {
+          "look": "A fragrant and flavorful rice that pairs well with many dishes.",
+          "get": "You scoop up a handful of rice, admiring the way it shimmers in the light. You put the rice in your inventory.",
+          "use": "You cook the rice to perfection, enjoying the aroma and the delicate flavor.",
+          "drop": "You drop the rice on the ground."
+        }
+      },
+      {
+        "name": "Tofu",
+        "description": "This will be good with some curry powder.",
+        "actionResponse": {
+          "look": "This will be good with some curry powder.",
+          "get": "You put the tofu in your inventory for later.",
+          "use": "",
+          "drop": "You drop the Tofu on the ground."
+        }
+      },
+      {
+        "name": "Cosmic Curry Powder",
+        "description": "Curry is perfect for cold weather.",
+        "actionResponse": {
+          "look": "Curry is perfect for cold weather.",
+          "get": "You put the Curry Powder in your inventory for later.",
+          "use": "",
+          "drop": "Are you crazy? You drop the delicious cosmic curry powder."
+        }
+      }
+    ]
+  },
+  {
+    "name": "Terrestrial Fish Tacos Recipe",
+    "ingredients": [
+      {
+        "name": "Tortillas",
+        "description": "These look nice and fresh.",
+        "actionResponse": {
+          "look": "These look nice and fresh.",
+          "get": "You put the Tortillas in your inventory for later.",
+          "use": "",
+          "drop": "You drop the Tortillas on the ground."
+        }
+      },
+      {
+        "name": "Terrestrial Space Fish",
+        "description": "This space fish lives on land.",
+        "actionResponse": {
+          "look": "This space fish lives on land.",
+          "get": "You put the fish in your inventory for later.",
+          "use": "",
+          "drop": "You drop the fish on the ground. Luckily, it's a terrestrial fish!"
+        }
+      },
+      {
+        "name": "Salsa",
+        "description": "It has some spice to it, but would go great with seafood!",
+        "actionResponse": {
+          "look": "It has some spice to it, but would go great with seafood!",
+          "get": "You put the salsa in your inventory.",
+          "use": "",
+          "drop": "You drop the salsa on the ground."
+        }
+      }
+    ]
+  }
+]
